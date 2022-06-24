@@ -25,10 +25,19 @@ main {
 .text h3{
     margin: 0;
 }
+.text p {
+    color: hsl(214, 17%, 51%);
+}
 .profile-pic{
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
+}
+.profileinfo {
+    margin-left: 0.5rem;
+}
+.profileinfo p {
+    color: hsl(212, 23%, 69%);
 }
 .creator {
     display: flex;
@@ -57,9 +66,6 @@ main {
     width: 0.8rem;
     height: 0.8rem;
 }
-.profileinfo {
-    margin-left: 0.5rem;
-}
 
 
 #pop-up {
@@ -80,8 +86,9 @@ main {
     border-radius: 10px;
     padding: 0 1rem;
 }
-#pop-up h3 {
+#pop-up .h3 {
     color: hsl(212, 23%, 69%);
+    font-size: large;
 }
 .buttons1 {
     background: none;
