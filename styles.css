@@ -1,0 +1,152 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    width: 50rem;
+    height: 15rem;
+    background-color: white;
+    margin-top: 10rem;
+    border-radius: 15px;
+}
+.main-img {
+    border-radius: 15px 0 0 15px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.text h3{
+    margin: 0;
+}
+.profile-pic{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.creator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.creator h5 {
+    margin: 0.1rem;
+}
+.creator p {
+    margin: 0;
+}
+.creator button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: hsl(214, 17%, 51%);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 15rem;
+}
+.creator button img {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.profileinfo {
+    margin-left: 0.5rem;
+}
+
+
+#pop-up {
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3rem;
+    width: 14rem;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    margin: 0 auto;
+    left: 700px;
+    right: 0;
+    top: 270px;
+    bottom: 0;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0 1rem;
+}
+#pop-up h3 {
+    color: hsl(212, 23%, 69%);
+}
+.buttons1 {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#square {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    margin: 0 auto;
+    left: 670px;
+    right: 0;
+    top: 295px;
+    bottom: 0;
+    text-align: center;
+    transform: rotate(45deg);
+}
+#share-button {
+    display: flex;
+    z-index: 100;
+}
+
+@media only screen and (max-width:992px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 20rem;
+        height: 35rem;
+    }
+    .main-img {
+        width: 20rem;
+        height: 15rem;
+        border-radius: 15px 15px 0px 0;
+    }
+    #pop-up {
+        position: absolute;
+        top: 505px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0 0 15px 15px;
+        width: 18rem;
+        height: 4rem;
+        justify-content: flex-start;
+    }
+    #square {
+        display: flex;
+        justify-content: center;
+        position: absolute; 
+        top: 515px;
+        bottom: 0;
+        left: 0;
+        right: 0;       
+    }
+    #share-button{
+        margin-left: 75px;
+        margin-top: 10px;
+    }
+}
